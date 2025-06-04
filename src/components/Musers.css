@@ -1,0 +1,141 @@
+.items-box{
+    background:white;
+    display:flex;
+    flex-direction: column;
+}
+.users-table{
+    box-sizing: border-box;
+    height:50vh;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom:1px solid rgb(95, 95, 95) ;
+}
+.users-table-container{
+    padding: 10px;
+    height: fit-content;
+    width:80%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.users-table .table-container{
+    overflow-y:auto;
+    width: 100%;
+}
+
+.usersearch-bar{
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.usersearch-bar input[type="text"]{
+    background:rgba(29, 27, 27, 1);
+    color: white;
+    height:61px;
+    width:25%;
+    border-radius:18px;
+    border:none;
+    padding:15px;
+    z-index: 1;
+
+}
+.gadget-selector{
+    width:55%;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    gap:40px;
+}
+.position-block{
+    height:1vh;
+}
+
+.heading{
+    width:100%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.displaypics{
+    height:50%;
+    width:80%;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+    background-color: rgb(170, 170, 170);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.displaypics .displ-btn{
+    background:none;
+    border: none;
+}
+
+.users-details{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(116, 116, 116);
+}
+.users-details form{
+    display: flex;
+    width:60%;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(199, 197, 197);
+    flex-direction: column;
+}
+
+.users-details form input,textarea{
+    width: 70%;
+    padding: 20px;
+    font-size: 20px;
+    margin: 10px;    
+}
+
+.users-details form button{
+    margin:20px;
+    background: black;
+    color: white;
+    border: 2px solid black;
+    height:44px;
+    width:fit-content;
+    border-radius: 6px;
+}
+
+.users-table button{
+    background: black;
+    color: white;
+    border: 2px solid black;
+    height:44px;
+    border-radius: 6px;
+}
+
+.otherprices{
+    background-color: rgb(110, 110, 110);
+    display: flex;
+    height:fit-content;
+    margin-bottom:20px;
+    flex-direction: row;
+}
+
+.addprice input{
+    height:10%;
+    border: none;
+    border-radius: 8px;
+}
+
+.addedprices{
+    padding: 10px;
+    overflow-y: auto;
+    background-color: white;
+}

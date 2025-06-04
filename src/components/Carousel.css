@@ -1,0 +1,153 @@
+.carousel{
+    width:100%;
+    height:600px;
+    min-height:400px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    perspective: 10000px;
+    background-color: black;
+}
+
+.slides{
+    box-sizing: border-box;
+    position: relative;
+    width: 80%;
+    height: 500px;
+    min-height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    border-radius: 70px;
+    padding: 3px;
+    margin-top: -50px;
+}
+
+.pings{
+    position:absolute;
+    width:100%;
+    top:88%;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.ping{
+    background:none;
+    border-radius: 100%;
+    width:20px;
+    height:20px;
+    border:2px solid white;
+    box-shadow: 0px 10px 10px black;
+}
+.active{
+    background-color: rgb(155, 153, 153);
+}
+
+.slides .component{
+    position: absolute;
+    opacity: 0;
+    border:0.5px solid rgb(46, 45, 45);
+    user-select: none;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;
+}
+
+
+.component .div-tint{
+    position: absolute;
+    opacity:0.4;
+    width:100%;
+    border-radius: 0px;
+    height:100%;
+    background-color: black;
+}
+
+
+.component img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slides .component .caption{
+    color: white;
+    position: absolute;
+    height:20%;
+    top:80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.863),rgba(0, 0, 0, 0.719),rgba(0, 0, 0, 0.432),rgba(255, 255, 255, 0));
+}
+.slides .component .caption .name{
+    font-size: 28px;
+    text-shadow: 1px 1px 4px black;
+
+}
+
+.slides .component .caption .info{
+    font-size: 20px;
+}
+
+
+
+.current-left{
+    transform: translateX(100%) translateY(15%) translateZ(0px);
+    width:74%;
+    height:85%;
+    opacity: 0 !important;
+    transition: transform 0s ease;
+}
+
+
+.current{
+    transform: translateX(35%) translateY(15%) translateZ(1500px);
+    z-index: 2;
+    width:75%;
+    height:85%;
+    opacity: 1 !important;
+    transition: transform 1s ease, opacity 0.6s ease;
+    box-shadow: 0px 0px 5px black;
+}
+
+.current:hover{
+    transform: translateX(35%) translateY(12%) translateZ(1500px);
+}
+.current-right{
+    transform: translateX(35%) translateZ(100px); /* Move to right and pop out */
+    width:74%;
+    height:85%;
+    opacity: 0.5 !important;
+    box-shadow: 0px 0px 5px white;
+}
+
+.arrow{
+    position:absolute;
+    background:none;
+    border:none;
+    border-radius: 100%;
+    width:100px;
+    height:100px;
+    top:50%;
+    z-index: 3;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.arrow img{
+    object-fit: cover;
+    height: 100%;
+}
+.arrow:hover{
+    transform: translateZ(150px);
+}
+
+.arrow-left{
+    left:0.5rem;
+}
+.arrow-right{
+    right:0.5rem;
+}

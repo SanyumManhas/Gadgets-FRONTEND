@@ -1,0 +1,114 @@
+.slider-container{
+    position: relative;
+    width:750px;
+    height:600px;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider-container img{
+    opacity: 0;
+    border-radius: 21px;
+    object-fit: contain;
+    transition:opacity 0.3s ease;
+
+}
+
+.slider-container .active{
+    position: absolute;
+    background-color: white;
+    transform: translate(50%,0%);
+    z-index: 1;
+    opacity: 1;
+    width: 50%;
+    height: 500px;
+}
+
+
+.slider-container .active-left{
+    position: absolute;
+    transform: translate(10%,5%);
+    opacity: 0.5;
+    width: 50%;
+    height: 450px;
+}
+
+.slider-container .active-right{
+    position: absolute;
+    transform: translate(90%,5%);
+    opacity: 0.5;
+    width: 50%;
+    height: 450px;
+}
+
+.navigate{
+    position:absolute;
+    top:30%;
+    width:100px;
+    height:100px;
+    padding: 0;
+
+}
+
+
+.navigate button{
+    background: none;
+    border:none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding:0;
+    perspective:10000px;
+    border-radius:100%;
+    box-shadow: 1px 1px 10px black;
+}
+
+.navigate img{
+    opacity:1;
+    width:100%;
+    height: 100%;
+    border-radius: 0;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    
+}
+
+.navigate img:hover{
+    transform: translateZ(1000px)
+}
+
+.left-btn{
+    left:4em;
+}
+.container{
+    position:relative;
+}
+
+.right-btn{
+    right:4em
+}
+
+.guides{
+    position: absolute;
+    bottom:0em;
+    left:29.5%;
+    width:40.5%;
+    height:80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: auto;
+    gap: 10px;    
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+.guides::-webkit-scrollbar {
+    display: none; 
+}
+
+.guides img{
+    height: 100%;
+}
+

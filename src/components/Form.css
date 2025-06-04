@@ -1,0 +1,109 @@
+.page-container{
+    height:100vh;
+    display:flex;
+}
+
+.form-container{
+    width:50%;
+    background-color: rgba(49, 49, 49, 1);
+    color:white;
+}
+
+.img-container{
+    width:50%;
+}
+
+.web-title{
+    padding:20px;
+    height:5%;
+}
+
+.form-section
+{
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-data {
+    height:90%;
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+.form-data span{
+    font-size: 28px;
+    padding-left: 10px;
+}
+
+.form-inputs{
+    padding-left:10px;
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.form-text{
+    background: none;
+    border:2px solid black;
+    border-radius: 6px;
+    height:44px;
+    padding: 10px;
+    color: white;
+}
+
+.form-check-input:checked {
+    background-color: black;
+  }
+
+
+.form-fields{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10px
+}
+
+.form-check-input {
+width: 1em;
+height: 1em;
+cursor: pointer;
+margin-top:10px;
+}
+.form-check-label{
+    margin-top:5px;
+}
+
+.form-inputs .login-btn{
+    background: black;
+    color: white;
+    border: 2px solid black;
+    height:44px;
+    border-radius: 6px;
+}
+
+.form-inputs button{
+    background: none;
+    border: 2px solid black;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    
+}
+
+.external-signin{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.external-signin{
+height:40px;
+}
